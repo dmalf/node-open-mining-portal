@@ -1,3 +1,13 @@
+# IMPORTANT PATCH - SHARE VULNERABILITY
+
+
+node_modules/stratum-pool/lib/stratum.js, lines 180-181 should be 
+nTime       : message.params[3].toLowerCase(),
+nonce       :  message.params[4].toLowerCase()
+
+This is remediation to the bug reported at https://github.com/patrickkivits/node-stratum-pool/blob/0dc4bbcc14353d188a78b4468e7f549b00e13fd9/lib/stratum.js#L166-L167 . 
+
+
 # NOMP ![NOMP Logo](http://zone117x.github.io/node-open-mining-portal/logo.svg "NOMP Logo")
 #### Node Open Mining Portal
 
